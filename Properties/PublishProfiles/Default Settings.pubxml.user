@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAclAHu/igjkaCZXZdXgc1KgAAAAACAAAAAAADZgAAwAAAABAAAACrS9Oh25BkAbdiibi7/O7mAAAAAASAAACgAAAAEAAAAEeIS4vlF/6CwZSjClEk+ooYAAAAamoID+sYlN4cSMsQJKO2gMd2qEglZ7sqFAAAAMUS6rgz4M6rADLZHGEVj3yRToZE</EncryptedPassword>
+    <History>True|2022-05-26T15:11:11.2010842Z;True|2022-05-26T16:04:14.4791311+01:00;True|2022-05-26T11:22:24.4970797+01:00;True|2022-05-26T09:10:36.7440486+01:00;True|2022-05-25T17:36:56.1501810+01:00;True|2022-05-25T14:00:36.0669603+01:00;True|2022-05-24T11:46:01.3933163+01:00;True|2022-05-21T22:00:09.3673079+01:00;False|2022-05-21T21:55:01.0783462+01:00;True|2022-05-21T15:16:14.8038066+01:00;True|2022-05-20T15:55:17.7049918+01:00;True|2022-05-20T13:06:09.0906692+01:00;True|2022-05-19T15:17:32.3789303+01:00;True|2022-05-19T15:10:50.5295200+01:00;True|2022-05-19T11:17:39.0584691+01:00;True|2022-05-18T12:04:30.7677756+01:00;True|2022-05-17T18:05:57.5792351+01:00;True|2022-05-17T17:56:36.5456504+01:00;True|2022-05-17T12:48:18.6125298+01:00;True|2022-05-16T14:49:22.3764074+01:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="LeaveAppString">
+      <Value>Server=SQL8003.site4now.net%3b Database=db_a86fa1_accretedb01%3b user id = db_a86fa1_accretedb01_admin%3b password = Accrete%40123%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="LeaveRequestAPP.Data.ApplicationDbContext">
+      <Value>Server=SQL8003.site4now.net%3b Database=db_a86fa1_accretedb01%3b user id = db_a86fa1_accretedb01_admin%3b password = Accrete%40123%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
