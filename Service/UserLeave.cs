@@ -264,9 +264,15 @@ namespace LeaveRequestAPP.Service
 
         public async Task<ApiResponse> GetColleaguesApprovedLeave(string userEmail, int pageNumber = 1, int pageSize = 20)
         {
-            var listLR = await _context.LeaveRequests.Where(x => x.EmployeeId != userEmail && x.Status == LeaveStatus.Approved.ToString()).ToListAsync();
-            var filteredResult = listLR.Skip((pageNumber - 1) * pageSize).Take(pageSize);
-            return ReturnedResponse.SuccessResponse("Successful", new { tList = filteredResult, totalCount = listLR.Count() });
+            var userExist = await _context.Users.AnyAsync(x => x.Email == userEmail);
+            if (userExist)
+            {
+                var listLR = await _context.LeaveRequests.Where(x => x.EmployeeId != userEmail && x.Status == LeaveStatus.Approved.ToString()).ToListAsync();
+                var filteredResult = listLR.Skip((pageNumber - 1) * pageSize).Take(pageSize);
+                return ReturnedResponse.SuccessResponse("Successful", new { tList = filteredResult, totalCount = listLR.Count() });
+            }
+
+            return ReturnedResponse.ErrorResponse("This user does not exist", null);
         }
 
         public async Task<ApiResponse> GetUser(string userEmail)

@@ -31,5 +31,6 @@ namespace LeaveRequestAPP.Interfaces
         Task<ApiResponse> CreateUser(CreateUserModel model);
         Task<ApiResponse> GetAllUsers(int pageNumber, int pageSize);
         Task<ApiResponse> ManagerLogin(string userEmail);
+        Task<ApiResponse> GetAllPendingRequest(int pageNumber = 1, int pageSize = 40);
     }
 }

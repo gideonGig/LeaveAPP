@@ -233,5 +233,17 @@ namespace LeaveRequestAPP.Service
 
         }
 
+        public async Task<ApiResponse> GetAllPendingRequest(int pageNumber = 1, int pageSize = 40)
+        {
+            var requests = await _context.LeaveRequests.Where(x => x.Status == null).ToListAsync();
+            if (requests == null || requests.Count == 0)
+            {
+                return ReturnedResponse.ErrorResponse("No requests exist yet", null);
+            }
+            var filteredResult = requests.Skip((pageNumber - 1) * pageSize).Take(pageSize);
+            return ReturnedResponse.SuccessResponse("Successful", new { tList = filteredResult, totalCount = requests.Count() });
+
+        }
+
     }
 }

@@ -270,5 +270,35 @@ namespace LeaveRequestAPP.Controllers
             }
         }
 
+
+        [HttpGet]
+        [Route("api/v1/GetAllPendingRequests")]
+        public async Task<IActionResult> GetAllPendingRequests(int pageNumber =1, int pageSize = 15)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    var errMessage = string.Join(" | ", ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage));
+                }
+
+                var resp = await _manager.GetAllPendingRequest(pageNumber, pageSize);
+                if (resp.Message == Status.Successful.ToString())
+                {
+                    return Ok(resp);
+                }
+                else
+                {
+                    return BadRequest(resp);
+                }
+            }
+            catch (Exception ex)
+            {
+                var em = ex.Message == null ? ex.InnerException.ToString() : ex.Message;
+                _log.LogInformation(string.Concat("Error Occured in GetAllPendingRequests ", em));
+                return BadRequest(ReturnedResponse.ErrorResponse("An error has occured", null));
+            }
+        }
+
     }
 }

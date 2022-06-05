@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\G.Okhakumhe\\source\\repos\\LeaveRequestAPP\\LeaveRequestAPP.csproj": {}
+    "C:\\Users\\DELL PRECISION 5520\\Source\\Repos\\LeaveAPP\\LeaveRequestAPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\G.Okhakumhe\\source\\repos\\LeaveRequestAPP\\LeaveRequestAPP.csproj": {
+    "C:\\Users\\DELL PRECISION 5520\\Source\\Repos\\LeaveAPP\\LeaveRequestAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\G.Okhakumhe\\source\\repos\\LeaveRequestAPP\\LeaveRequestAPP.csproj",
+        "projectUniqueName": "C:\\Users\\DELL PRECISION 5520\\Source\\Repos\\LeaveAPP\\LeaveRequestAPP.csproj",
         "projectName": "LeaveRequestAPP",
-        "projectPath": "C:\\Users\\G.Okhakumhe\\source\\repos\\LeaveRequestAPP\\LeaveRequestAPP.csproj",
-        "packagesPath": "C:\\Users\\G.Okhakumhe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\G.Okhakumhe\\source\\repos\\LeaveRequestAPP\\obj\\",
+        "projectPath": "C:\\Users\\DELL PRECISION 5520\\Source\\Repos\\LeaveAPP\\LeaveRequestAPP.csproj",
+        "packagesPath": "C:\\Users\\DELL PRECISION 5520\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL PRECISION 5520\\Source\\Repos\\LeaveAPP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\G.Okhakumhe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DELL PRECISION 5520\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -115,6 +114,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.18, 3.1.18]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -123,7 +128,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
