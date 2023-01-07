@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="accrete-001-site1" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\DELL\ PRECISION\ 5520\\Source\\Repos\\LeaveAPP\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
-  </parameter>
-  <parameter name="LeaveRequestAPP.Data.ApplicationDbContext" description="" value="Server=SQL8003.site4now.net; Database=db_a86fa1_accretedb01; user id = db_a86fa1_accretedb01_admin; password = Accrete@123;" tags="dbfullsql">
-    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\DELL\ PRECISION\ 5520\\Source\\Repos\\LeaveAPP\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\LeaveRequestAPP\.Data\.ApplicationDbContext\.sql$" />
-  </parameter>
-</parameters>

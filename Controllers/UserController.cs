@@ -3,8 +3,6 @@ using LeaveRequestAPP.Interfaces;
 using LeaveRequestAPP.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -180,7 +178,6 @@ namespace LeaveRequestAPP.Controllers
         {
             try
             {
-
                 var resp = await _user.GetAllRejectedRequestByUserEmail(userEmail, pageNumber, pageSize);
                 if (resp.Message == Status.Successful.ToString())
                 {
@@ -303,7 +300,7 @@ namespace LeaveRequestAPP.Controllers
             try
             {
                 var obj = new List<string> { LeaveType.AnnualLeave.ToString(), LeaveType.SickLeave.ToString() };
-                return Ok(ReturnedResponse.SuccessResponse(null, obj));
+                return await Task.FromResult(Ok(ReturnedResponse.SuccessResponse(null, obj)));
             }
             catch (Exception ex)
             {
@@ -324,7 +321,7 @@ namespace LeaveRequestAPP.Controllers
             try
             {
                 var obj = new List<string> { RoleType.Manager.ToString(), RoleType.User.ToString() };
-                return Ok(ReturnedResponse.SuccessResponse(null,obj));
+                return await Task.FromResult(Ok(ReturnedResponse.SuccessResponse(null,obj)));
             }
             catch (Exception ex)
             {

@@ -94,6 +94,7 @@ namespace LeaveRequestAPP.Data
                     Description = "Administration role",
                     Status = "Active",
                 };
+
                 var createRole = role.CreateAsync(theUser).Result;
             }
 
@@ -118,7 +119,7 @@ namespace LeaveRequestAPP.Data
                     Description = "Petroleum Engineer role",
                     Status = "Active",
                 };
-                var createRole = role.CreateAsync(theUser).Result;
+                var createRole = role.CreateAsync(theUser);
             }
 
             context.SaveChanges();

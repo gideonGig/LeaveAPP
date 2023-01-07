@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<sitemanifest>
-  <IisApp path="C:\Users\DELL PRECISION 5520\Source\Repos\LeaveAPP\obj\Release\netcoreapp3.1\PubTmp\Out\" />
-  <dbfullsql path="C:\Users\DELL PRECISION 5520\Source\Repos\LeaveAPP\obj\Release\netcoreapp3.1\PubTmp\EFSQLScripts\LeaveRequestAPP.Data.ApplicationDbContext.sql" />
-</sitemanifest>

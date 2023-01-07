@@ -55,7 +55,7 @@ namespace LeaveRequestAPP
                 });
             });
 
-            services.AddDbContext<ApplicationDbContext>(o => o.UseSqlServer(Configuration.GetConnectionString("LeaveAppString")), ServiceLifetime.Transient);
+            services.AddDbContext<ApplicationDbContext>(o => o.UseSqlServer(Configuration.GetConnectionString("LeaveAppString")), ServiceLifetime.Singleton);
             services.AddControllers().AddNewtonsoftJson();
             services.AddIdentity<Employee, ApplicationRole>(o =>
             {

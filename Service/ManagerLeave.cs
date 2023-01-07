@@ -2,7 +2,6 @@
 using LeaveRequestAPP.Interfaces;
 using LeaveRequestAPP.Models;
 using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -64,6 +63,7 @@ namespace LeaveRequestAPP.Service
             //update the Status of the Leave to Approve
             lr.Status = LeaveStatus.Approved.ToString();
 
+            //ON A NORMAL DAY, YOU WOULD NOT CODE LIKE THIS, THIS COULD HAVE BEEN ABSTRACTED TO ANOTHER CLASS....
             //ADD IT TO OUTLOOK CALENDER
             try
             {
@@ -111,7 +111,7 @@ namespace LeaveRequestAPP.Service
         }
         public async Task<ApiResponse> RejectRequest(string leaverequestId, string managerEmail)
         {
-            var manager = _context.Users.FirstOrDefaultAsync(x => x.Email == managerEmail && x.UserType == RoleType.Manager.ToString());
+            var manager = await _context.Users.FirstOrDefaultAsync(x => x.Email == managerEmail && x.UserType == RoleType.Manager.ToString());
             if (manager == null)
             {
                 return ReturnedResponse.ErrorResponse("this user do not have right to approve request", null);
@@ -246,4 +246,5 @@ namespace LeaveRequestAPP.Service
         }
 
     }
+
 }

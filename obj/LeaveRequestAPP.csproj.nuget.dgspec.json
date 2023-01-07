@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL PRECISION 5520\\Source\\Repos\\LeaveAPP\\LeaveRequestAPP.csproj": {}
+    "/Users/gideon.okhakumhe/Documents/PersonalProject/LeaveAPP/LeaveRequestAPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL PRECISION 5520\\Source\\Repos\\LeaveAPP\\LeaveRequestAPP.csproj": {
+    "/Users/gideon.okhakumhe/Documents/PersonalProject/LeaveAPP/LeaveRequestAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL PRECISION 5520\\Source\\Repos\\LeaveAPP\\LeaveRequestAPP.csproj",
+        "projectUniqueName": "/Users/gideon.okhakumhe/Documents/PersonalProject/LeaveAPP/LeaveRequestAPP.csproj",
         "projectName": "LeaveRequestAPP",
-        "projectPath": "C:\\Users\\DELL PRECISION 5520\\Source\\Repos\\LeaveAPP\\LeaveRequestAPP.csproj",
-        "packagesPath": "C:\\Users\\DELL PRECISION 5520\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL PRECISION 5520\\Source\\Repos\\LeaveAPP\\obj\\",
+        "projectPath": "/Users/gideon.okhakumhe/Documents/PersonalProject/LeaveAPP/LeaveRequestAPP.csproj",
+        "packagesPath": "/Users/gideon.okhakumhe/.nuget/packages/",
+        "outputPath": "/Users/gideon.okhakumhe/Documents/PersonalProject/LeaveAPP/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL PRECISION 5520\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/gideon.okhakumhe/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,6 +78,10 @@
               "target": "Package",
               "version": "[5.0.17, )"
             },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Microsoft.Graph": {
               "target": "Package",
               "version": "[4.29.0, )"
@@ -90,6 +89,14 @@
             "Microsoft.Graph.Core": {
               "target": "Package",
               "version": "[2.0.8, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.1.0, )"
             },
             "RestSharp": {
               "target": "Package",
@@ -110,14 +117,23 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.18, 3.1.18]"
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[3.1.32, 3.1.32]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
             }
           ],
           "frameworkReferences": {
@@ -128,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.404/RuntimeIdentifierGraph.json"
         }
       }
     }
